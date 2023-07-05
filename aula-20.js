@@ -1,14 +1,14 @@
 // funções
 
-// function alterate() {
-//     let nome = document.getElementById("nome");
-//     let ensino = document.getElementById("ensino");
-//     let curso = document.getElementById("curso");
-//     nome.innerHTML=("Curso de javascript okay");
-//     ensino.innerHTML=("Curso de javascript okay");
-//     curso.innerHTML=("Curso de javascript okay");
+function alterate() {
+    let nome = document.getElementById("nome");
+    let ensino = document.getElementById("ensino");
+    let curso = document.getElementById("curso");
+    nome.innerHTML=("Curso de javascript okay");
+    ensino.innerHTML=("Curso de javascript okay");
+    curso.innerHTML=("Curso de javascript okay");
 
-// }
+}
 
 //script na aula-12.html
 
