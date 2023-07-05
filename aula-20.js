@@ -27,4 +27,4 @@ function nome_da_funcao(/*parametro*/){
     console.log("Hello world") //bloco de comando
 }
 
-nome_dela() //chamada
+nome_da_funcao() //chamada
