@@ -1,5 +1,5 @@
 //arow function
-//são mecanismo consiso para representar funcões anonimas.
+//são mecanismo conciso para representar funcões anonimas.
 // ao invés de usar o nome function, se usa =>
 
 let exemplo = () => {}; //arrow function
