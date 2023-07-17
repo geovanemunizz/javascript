@@ -36,9 +36,9 @@ let storage = teste.map((element, indi) => {
 // const valor = Array.prototype.map.call(elem, ({ innerHTML }) => innerHTML);
 // console.log(valor);
 
-//outra forma 
+//outra forma
 
-const converter = (el) => parseInt(el)
-const dobro = (el) => el*2
-let num = ['5','8','12', '1', '23'].map(converter)
-console.log(num)
+const converter = (el) => parseInt(el);
+const dobro = (el) => el * 2;
+let num = ["5", "8", "12", "1", "23"].map(converter);
+console.log(num);

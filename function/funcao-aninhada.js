@@ -15,9 +15,8 @@ const sum = (...valor) => {
   */
   return somar(valor);
 };
-value = [3, 7]; 
+value = [3, 7];
 console.log(sum(...value)); //passando um array para dentro da função sum
-
 
 const nome = (...alfa) => {
   const sobrenome = (beta) => {
@@ -29,14 +28,13 @@ const nome = (...alfa) => {
 };
 imagem = [9, 8, 64, 45];
 console.log(nome(...imagem));
- 
 
 const cores = (...cor) => {
   const itsColor = (color) => {
-    let palet =0;
+    let palet = 0;
     for (re of color) palet += re;
-    return palet
-  }
-  return itsColor(cor)
-}
-console.log(cores(9,3))//os dois valores passam para o parametro COR, e depois retorna para o itsColor, que soma o valor de res + o primeiro valor (9) e depois soma 9 ao segunda valor(3), acabando os valores ele retorna o valor de PALET (12),  para quem chamou a função cores
+    return palet;
+  };
+  return itsColor(cor);
+};
+console.log(cores(9, 3)); //os dois valores passam para o parametro COR, e depois retorna para o itsColor, que soma o valor de res + o primeiro valor (9) e depois soma 9 ao segunda valor(3), acabando os valores ele retorna o valor de PALET (12),  para quem chamou a função cores

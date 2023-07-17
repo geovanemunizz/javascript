@@ -7,12 +7,11 @@ for (let indice = 0; indice < 10; indice++) {
 }
 
 console.log("final do programa");
- 
 
-for (let parimpar = 0; parimpar < 100; parimpar++){
-    if(parimpar % 2 == 0) {
-        console.log(parimpar + " é par ")
-    } else {
-        console.log(parimpar + " é ímpar ")
-    }
+for (let parimpar = 0; parimpar < 100; parimpar++) {
+  if (parimpar % 2 == 0) {
+    console.log(parimpar + " é par ");
+  } else {
+    console.log(parimpar + " é ímpar ");
+  }
 }

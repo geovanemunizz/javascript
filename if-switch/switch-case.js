@@ -48,9 +48,9 @@ switch (dia) {
     mensagem = "Sexta-Feira";
     break;
 
-    default:
-      console.log("Final de semana");
-      break
+  default:
+    console.log("Final de semana");
+    break;
 }
 
 console.log(mensagem);

@@ -29,7 +29,6 @@ const arrayElementos = [elem1, elem2, elem3, elem4, elem5, elem6];
 
 //percoreendo com o map
 arrayElementos.map((el) => {
-    el.innerHTML = "Gear 5"
+  el.innerHTML = "Gear 5";
   console.log(el);
- 
 });
