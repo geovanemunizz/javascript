@@ -1,4 +1,4 @@
-// funções anônimas
+// funções anônimas - aula 24
 
 //são funções que não possuem um nome associado. São chamadas em tempo de execução, ou seja, ela só vai ser criada no momento da execução, não está guardada na memória.
 

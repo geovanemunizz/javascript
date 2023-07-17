@@ -1,4 +1,4 @@
-/* operadores relscionais 
+/* operadores relacionais 
 > maior
 >= maior igual
 < menor

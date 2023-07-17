@@ -1,3 +1,5 @@
+//loop for, in e of - prática
+
 //com for padrao
 function soma(...valor) {
   let qtd = valor.length;

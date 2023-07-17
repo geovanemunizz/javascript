@@ -1,3 +1,5 @@
+// switch case aula - 14
+
 // switch case, avalia uma expressão e de acordo com o resultado, ele compara com  os case que ele está programado
 
 let caso = 6;

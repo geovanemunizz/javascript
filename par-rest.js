@@ -1,4 +1,4 @@
-//parâmetros REST
+//parâmetros REST - aula 23
 
 //é uma forma de passagem de parametro onde não precisa especificar repetidamente a quantidade de paramentro que vai ser enviado para a function
 

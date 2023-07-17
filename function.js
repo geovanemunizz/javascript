@@ -1,4 +1,4 @@
-// funções
+// funções - aula 20
 
 function alterate() {
     let nome = document.getElementById("nome");

@@ -1,4 +1,4 @@
-//funções parametrizadas
+//funções parametrizadas - aula 22
 
 const value_padrao = 1;
 

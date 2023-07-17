@@ -1,4 +1,4 @@
-// funções aninhadas (funções deentro de funções)
+// funções aninhadas (funções deentro de funções) - aula 26
 
 const somar = (valores) => {
   let resto = 0;

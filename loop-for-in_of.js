@@ -1,3 +1,4 @@
+// lopp for in e for of - aula 16
 //varições de for, in e of
 
 const objeto = document.getElementsByTagName("div")

@@ -1,4 +1,4 @@
-//funções geradoras
+//funções geradoras - aula 27
 
 // tem o seu retorno adiado até o momento que seja necessário esse retorno. No primeiro momento ela retorna um iterador, a partir do segundo, entra na execução e quando encontra o yield, retorna o conteúdo.
 

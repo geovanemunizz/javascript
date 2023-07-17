@@ -1,4 +1,5 @@
-//arow function
+//arow function - aula 25
+
 //são mecanismo conciso para representar funcões anonimas.
 // ao invés de usar o nome function, se usa =>
 

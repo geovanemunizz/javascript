@@ -1,4 +1,4 @@
-//loop while (enquanto)
+//loop while (enquanto) -aula 17
 /* sintaxe: 
 while (condicao) {
    bloco de comando
