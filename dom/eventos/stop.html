@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stop</title>
+</head>
+
+<body>
+    <ul id="lista">
+        <li class="item">item1</li>
+        <li class="item">item2</li>
+        <li class="item">item3</li>
+    </ul>
+    <script>
+        const list = document.getElementById("lista")
+        const item = document.getElementsByClassName("item")
+
+        for (i = 0; i < item.length; i++) {
+            item[i].addEventListener("click", function (evento)  {
+                console.log(`clicou no ${this.textContent}`)
+                evento.stopPropagation()
+            })
+        }
+        list.addEventListener("click", (evento) => {
+            console.log("clicou na lista toda")
+        })
+
+
+    </script>
+</body>
+
+</html>

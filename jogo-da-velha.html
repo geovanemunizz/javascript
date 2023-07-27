@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        td {
+            width: 50px;
+            height: 50px;
+            border: 1px solid black;
+            text-align: center;
+            font-size: 30px;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Jogo da Velha</h1>
+    <table>
+        <tr>
+            <td onclick="jogar(0,0)"></td>
+            <td onclick="jogar(0,1)"></td>
+            <td onclick="jogar(0,2)"></td>
+        </tr>
+        <tr>
+            <td onclick="jogar(1,0)"></td>
+            <td onclick="jogar(1,1)"></td>
+            <td onclick="jogar(1,2)"></td>
+        </tr>
+        <tr>
+            <td onclick="jogar(2,0)"></td>
+            <td onclick="jogar(2,1)"></td>
+            <td onclick="jogar(2,2)"></td>
+        </tr>
+    </table>
+    <button onclick="reiniciar()">reiniciar</button>
+
+    <script src="celsius.js"></script>
+</body>
+
+</html>
