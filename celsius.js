@@ -68,7 +68,7 @@ function checarDiagonal() {
       tabuleiro[0][0] === tabuleiro[2][2] &&
       tabuleiro[0][0] !== "") ||
     (tabuleiro[0][2] === tabuleiro[1][1] &&
-      tabuleiro[0][2] === tabuleiro[2][0] &&
+      tabuleiro[0][2] === tabuleiro[1][2] &&
       tabuleiro[0][2] !== "")
   ) {
     return tabuleiro[1][1];

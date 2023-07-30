@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>elementos do Dom - parte 1</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            border: none;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%
+        }
+
+        #botao,
+        #voltar {
+            width: 120px;
+            height: 30px;
+            border-radius: 5px;
+            background: #085ce2;
+            color: #fff;
+        }
+
+        .nome {
+            display: flex;
+            justify-content: center;
+            width: 200px;
+            border: 2px solid black;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 5px 0px;
+            box-shadow: 0px 0px 10px 1px #aaa7a7;
+            color: #fff;
+        }
+
+        .conteiner {
+            display: flex;
+            flex-direction: column;
+            background: rgb(195, 192, 192);
+            padding: 30px;
+            border: 2px solid #000000;
+            justify-content: center;
+            align-items: center;
+            margin: 5px;
+            height: 300px;
+            width: 220px;
+            border-radius: 15px;
+        }
+
+        .nome:hover {
+            border-color: #d1cfcf;
+        }
+
+        .c1 {
+            background: #ff0000;
+        }
+
+        .c2 {
+            background: #0000ff;
+        }
+
+        .estrela {
+            background: green !important;
+            color: yellow !important;
+            border-color: #880e0e !important;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div id="caixa1" class="conteiner">
+            <div id="c1" class="nome c1">
+                <div id="c1_1">
+                    <div id="c1_2">
+                        css
+                    </div>
+                </div>
+            </div>
+            <div id="c2" class="nome c1">java</div>
+            <div id="c3" class="nome c1">javascript</div>
+            <div id="c4" class="nome c1">typescript</div>
+            <div id="c5" class="nome c1"> python</div>
+            <div id="c6" class="nome c1">php</div>
+        </div>
+    </main>
+    <!-- <script src="elementos-p1.js"></script> -->
+    <script src="elementos-p2.js"></script>
+</body>
+
+</html>
