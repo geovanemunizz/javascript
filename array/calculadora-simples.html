@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/calculadora-simples.css">
+    <title>calculadora simples</title>
+</head>
+
+<body>
+    <div id="conteiner" class="caixa">
+
+        <div class="entrada">
+            <label for="value1">valor 1</label>
+            <input type="number" name="value1" id="value1">
+        </div>
+
+        <div class="entrada">
+            <label for="valor2">valor 2</label>
+            <input type="number" name="valor2" id="value2">
+        </div>
+
+        <div class="entrada">
+            <label for="result">Resultado</label>
+            <input type="number" name="result" id="result" readonly style="cursor:not-allowed">
+        </div>
+        <div class="operacoes">
+            <button data-action="subtract" id="subtract">-</button>
+            <button data-action="multiply" id="multiply">&times;</button>
+            <button data-action="divide" id="divisao">/</button>
+            <button data-action="add" id="soma">+</button>
+        </div>
+    </div>
+
+    <script src="calculadora-simples.js"></script>
+</body>
+
+</html>

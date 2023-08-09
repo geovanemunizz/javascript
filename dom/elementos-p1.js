@@ -31,3 +31,12 @@ console.log(document.getRootNode()) //getRootNode é um método por isso precisa
 // console.log(items[0].getRootNode()) // o root é o document, todo o html
 
 console.log(items[0].ownerDocument)
+
+/*
+parentNode
+childNodes
+firstChild
+lastChild
+nextSibling
+previousSibling
+ */

@@ -1,0 +1,48 @@
+elementos do dom
+
+find(): é usada para encontrar o primeiro elemento que satisfaz uma determinada condição em um array.
+
+sintaxe: 
+array.find(callback(element[,index[, array]])[,thisArg])
+
+array: O array no qual a busca será realizada.
+callback: Uma função de retorno de chamada (callback) que é executada uma vez para cada elemento do array.
+element: O elemento atual sendo processado no array.
+index (opcional): O índice do elemento atual sendo processado no array.
+array (opcional): O array no qual a função find() foi chamada.
+thisArg (opcional): Um valor para ser usado como this ao executar a função de retorno de chamada.
+
+ex: const numero = [1,2,3,4,5,6,7,8,9,10]
+const num = numero.find((num) >= num % 2 === 0))
+console.log(num)
+
+//
+
+
+insertBefore():  usado para inserir um novo elemento antes de um elemento de referência (ou seja, antes de um elemento existente) em uma árvore DOM (Documento Object Model). 
+
+sintaxe:  parentNode.insertBefore(newNode, refereceNode)
+
+parentNode: É o elemento pai onde o novo nó será inserido.
+newNode: É o novo elemento que será inserido na árvore DOM.
+referenceNode: É o elemento de referência que serve como ponto de inserção para o novo elemento. O novo elemento será inserido antes deste elemento de referência.
+
+//
+
+createElement(): é usado para criar um novo elemento html, seja div, input, p, h1, etc.
+
+sintaxe: document.createElement("Tagname")
+
+tagName: É uma string que representa o nome do elemento HTML que você deseja criar, como "div", "p", "span", "a", etc. Essa string deve estar em letras minúsculas.
+
+//
+
+appendChild(): é usado para adicionar um novo elemento como filho de outro elemento existente na árvore DOM.
+
+sintaxe: parentNode.appendChild(newNode)
+
+parentNode: É o elemento pai ao qual o novo elemento será adicionado como filho.
+
+newNode: É o novo elemento que será adicionado como filho do elemento pai.
+
+//
