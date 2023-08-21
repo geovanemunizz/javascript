@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos parte 3</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .caixa {
+            padding: 10px;
+        }
+
+        .caixa input {
+            display: flex;
+            padding: 5px;
+            width: 300px;
+            border-radius: 5px;
+        }
+
+        #botao {
+            padding: 5px;
+            width: 300px;
+            background-color: #f0f8ff;
+        }
+
+        #botao:hover {
+            background-color: #919192;
+        }
+
+        #box {
+            display: flex;
+            margin: 5px;
+            padding: 5px;
+            border: 2px solid #121212;
+            width: 400px;
+            border-radius: 10px;
+        }
+
+        .system {
+            display: flex;
+            border: 5px;
+            padding: 5px;
+            border: 2px solid #0d89a5;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="main">
+        <div class="caixa">
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome" autocomplete="off">
+        </div>
+        <div class="caixa">
+            <label for="numero">Idade</label>
+            <input type="number" name="numero" id="Idade">
+        </div>
+        <div class="caixa">
+            <button id="botao">Adicionar</button>
+        </div>
+        <div id="box"></div>
+    </main>
+    <!-- <script src="entendendo-obj-part3.js"></script> -->
+    <!-- <script src="obj-parte4.js"></script> -->
+    <script src="obj-literal.js"></script>
+</body>
+
+</html>

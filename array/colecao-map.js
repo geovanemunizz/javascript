@@ -8,7 +8,7 @@
 // Como um array, ele se lembra da ordem de inserção.
 
 const box = document.getElementsByClassName("caixa")
-
+const nomes = document.getElementById("caixa")
 const mapa = new Map([
     ['nome', 'coding'], //nome, tipo, cor são keys(chave)
     ['tipo', 'manha'], //codding, manha, red são values
@@ -17,7 +17,7 @@ const mapa = new Map([
 console.log(mapa.keys()) //retorna as keys do map
 
 const newWorld = new Map()
-//adiciona valores ao map utiliznado o set (keys, values)
+//adiciona valores ao map utilizando o set (keys, values)
 newWorld.set("valor", "cinto")
 newWorld.set("hora", "minuto")
 newWorld.get("valor")
@@ -32,15 +32,12 @@ const chaves = new Map([
 ])
 console.log(chaves.get("aula"))
 
-//as chaves pode ser de qualquer tipo
-const happyMap = new Map([
-    ["regular", "paleta"],
-    ["primitivo", "maior"],
-])
+//as chaves podem ser de qualquer tipo
+const happyMap = new Map()
 happyMap.set(369,"toplaner") //number como chave
 happyMap.set(true,"joga lpl") //booleano como chave
 
-let obj = {"regular" : "marx"}
+let obj = {'regular': "marx"}
 happyMap.set(obj,true);//objeto como chave
 console.log(happyMap)
 
@@ -53,9 +50,9 @@ console.log(objStr[190] === objStr["190"]) //retorna true, pois 190 foi converti
 //propriedades dos map:
 console.log("tamanho do mapa: ", mapa.size) //usado para saber quantos elementos estão em um map
 
-//retorna true se o map tiver uma chave 'aula has(keys)
+//retorna true se o map tiver uma chave 'aula' has(keys)
 console.log(chaves.has("aula"))
-//retorna false se o map não tiver uma chave 'jarvan has(keys)
+//retorna false se o map não tiver uma chave 'jarvan' has(keys)
 console.log(chaves.has("jarvan")) 
 
 //remove o elemento com a keys 'tipo'
