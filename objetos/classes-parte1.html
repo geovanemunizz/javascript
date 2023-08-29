@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/class-p1.css">
+    <title>Exercicio de classes parte 1</title>
+</head>
+
+<body>
+    <div class="entrada">
+        <label for="nome">Nome do Mangá</label>
+        <input type="text" name="nome" id="nome">
+    </div>
+
+    <div class="entrada">
+        <label for="capitulos">capitulo</label>
+        <input type="number" name="capitulos" id="capitulos" disabled value="0">
+    </div>
+
+    <div class="entrada">
+        <label for="person">personagem</label>
+        <input type="text" name="personagem" id="personagem">
+    </div>
+
+    <div class="entrada">
+        <label for="NumPaginas">Número de páginas</label>
+        <input type="number" name="NumPaginas" id="NumPaginas" disabled value="0">
+    </div>
+
+    <div class="entrada">
+        <label for="visitas">Visitas</label>
+        <input type="number" name="vistantes" id="visitas" value="0">
+    </div>
+    <p>tipo:</p>
+    <div class="checkbox">
+        <input type="radio" name="selecao" id="anime" value="anime">
+        <label for="anime">Anime</label>
+
+        <input type="radio" name="selecao" id="manhwa" value="manhwa"> 
+        <label for="manhwa">Manhwa</label>
+
+    </div>
+    <p>encerrado: </p>
+    <div class="checkbox">
+        <input type="radio" name="selector" id="yes" value="sim"> 
+        <label for="yes">sim</label>
+
+        <input type="radio" name="selector" id="not" value="nao">
+        <label for="not">não</label>
+    </div>
+    <button  class="botao" id="botao">Adicionar</button>
+    <div class="caixa" id="box">
+
+    </div>
+    <script src="classes-parte1.js"></script>
+</body>
+
+</html>

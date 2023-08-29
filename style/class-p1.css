@@ -1,0 +1,52 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.entrada {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.entrada > input {
+  width: 200px;
+  padding: 5px;
+  border-radius: 5px;
+  background: rgb(193, 189, 189);
+}
+.botao {
+  background: grey;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #ffffff;
+  width: 200px;
+  color: #fff;
+}
+
+.botao:hover {
+  background: rgb(63, 63, 63);
+}
+
+.checkbox label {
+  cursor: pointer;
+}
+
+.caixa {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  padding: 5px;
+  border: 2px solid #121212;
+  width: 400px;
+  border-radius: 10px;
+}
+
+.exibir {
+  display: flex;
+  flex-direction: column;
+  border: 5px;
+  padding: 5px;
+  border: 2px solid #0d89a5;
+}
