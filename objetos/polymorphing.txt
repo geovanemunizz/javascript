@@ -1,0 +1,112 @@
+existe três tipos de polimorfismo(adhoc,paramétrico e subtipo)
+
+1. Adhoc: é usado para descrever a criação de algo sem planejamento prévio. Em outras palavras, polimorfismo Adhoc significa MUDAR ALGO DE UMA PARA OUTRA NO LOCAL.
+
+Existem muitas formas de polimorfismo Adhoc: 
+1.1: Sobrecarga do operador
+1.2: Sobrecarga da função
+1.3: polimorfismo de coerção
+
+1.1:  Sobrecarga do operador significa ser capaz de fazer mais de uma coisa:
+exemplo:
+O operador em JavaScript faz muitas coisas. Você pode usá-lo para adicionar números. Você também pode usá-lo para concatenar cadeias de caracteres:
+
+1+1 // 2
+"Hello" + " " + "World" // Hello World
+1+ "up" // 1up
+
+O resultado muda dependendo do que está sendo adicionado.
+O operador, nesse caso, permite que você altere os valores de um formulário (como) para outro (como).
+
+1.2: Sobrecarga de função em JavaScript é um pouco diferente porque não podemos produzir duas funções diferentes com o mesmo nome. Usamos uma função, mas mudamos os resultados de acordo com os argumentos que recebemos.
+
+ex:
+function volumeCuboid(tamanho,amplitude,altura){
+  return tamanho * amplitude * altura
+}
+
+function volumeCubo (tamanho){
+  return volumeCuboid(tamanho,tamanho,tamanho)
+}
+
+function ResultadoVolume(...el){
+  if(el.length === 3) return volumeCuboid(...el)
+    return volumeCubo(el[0])
+}
+
+pode ter uma uma função que retorna objetos diferentes dependendo do valor de createShape shape:
+
+function createShape(tamanho,shape){
+  if(shape === "Triangulo") return new Triangle()
+  if(shape === "Retangulo") return new Retangulo()
+  if(shape === "Quadrado") return new Quadrado()
+}
+
+
+1.3: polimorfismo de coerção converte um valor de tipo para outro ao avaliá-lo, por exemplo, pode colocar uma expressão dentro de uma instrução. Como a coerção de tipo acontece no local, é uma forma de polimorfismo adhoc.
+Exemplo: 
+
+const string = "hello"
+if(String){
+  console.log(string)
+}
+
+2. polimorfismo paramétrico: é um polimorfismo relacionado a parâmetros, o paramétrico tem duas partes:
+2.1: Dados que podem conter muitos tipo de dados
+2.2: Funções que podem trabalhar com muitos tipos de dados.
+
+
+2.1:  Tudo em JavaScript é um objeto. Assim, os objetos são paramétricos. Ele pode ser convertido em outros tipos de dados.
+Os objetos também podem armazenar vários tipos. Não importa quais valores são armazenados.
+
+Exemplo:
+const obj = {
+    str = "Hello World!"
+    num = 324
+    booleano = false
+}
+
+Os arrays também são paramétricos. Ele permite que você armazene muitos tipos de dados e não se importa com o que eles são.
+
+Exemplo:
+const array = ["Hello world", 456, true]
+
+
+2.2 As funções que podem trabalhar com muitos tipos de dados são chamadas de funções polimórficas. Eles não se importam com o que entra. Eles aplicarão a transformação que lhes for dito para fazer, e eles mostram um resultado.
+
+Exemplo:
+const dobro = [4,5,10].map(num=> num *2)
+
+Você pode usar para converter números em cadeias de caracteres:
+const ToString = [4,2,6].map(num => `${num}`)
+
+Object.assign é outro exemplo. Ele pega um objeto e mostra outro objeto, mas não se importa com o que vai dentro de cada objeto.
+
+const item = Object.assign({},{property: 'value'})
+
+
+3: polimorfismo do subtipo: O polimorfismo de subtipo envolve a criação de objetos derivados de um objeto pai. Pode ser chamado de Polimorfismo de Inclusão, Subclassificação ou Herança. Os objetos derivados podem substituir um método do pai e ele ainda funcionará.
+
+Exemplo:
+class pessoa{
+  constructor(name){
+    this.name = name
+  }
+  ola(){
+    console.log(`Olá! eu me chamo ${this.name}`)
+  }
+}
+
+e depois adiciona uma subclasse a partir de pessoa:
+
+class desenvolvedor extends pessoa{
+  ola(){
+    console.log(`Olá! eu me chamo ${this.name} e sou desenvolvedor`)
+  }
+}
+
+class gerente extends pessoa{
+  ola(){
+    console.log(`Olá! eu me chamo ${this.name} e sou gerente`)
+  }
+}
