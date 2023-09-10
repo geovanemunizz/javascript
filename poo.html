@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="log"></div>
+    <!-- <script>
+        var defaults = { validate: false, limit: 5, name: "foo" }
+        var opt = { validate: true, name: "bar" }
+        var settings = $.extend({}, defaults, opt)
+        $("#log").appendChild("<div><br>defaults -- </br>" + JSON.stringify(defaults) + "</div>")
+        $("#log").appendChild("<div><br>options -- </br>" + JSON.stringify(opt) + "</div>")
+        $("#log").appendChild("<div><br>settings -- </br>" + JSON.stringify(settings) + "</div>")
+    </script> -->
+    <script>
+        var $ = document.querySelector("#log")
+        var defaults = { validate: false, limit: 5, name: "foo" };
+        var options = { validate: true, name: "bar" };
+
+        // Merge defaults and options, without modifying defaults
+        var settings = $.extend({}, defaults, options)
+        $.appendChild("<div><b>defaults -- </b>" + JSON.stringify(defaults) + "</div>");
+        $.appendChild("<div><b>options -- </b>" + JSON.stringify(options) + "</div>");
+        $.appendChild("<div><b>settings -- </b>" + JSON.stringify(settings) + "</div>");
+    </script>
+    </script>
+
+</body>
+</html>
