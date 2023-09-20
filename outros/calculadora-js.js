@@ -1,3 +1,4 @@
+//calculadora aula 70, 71 e 72
 const NumTeclas = [...document.querySelectorAll(".num")];
 const operacoes = [...document.querySelectorAll(".operadores")];
 const resultado = document.querySelector(".igual");
@@ -7,7 +8,8 @@ const soma = document.getElementById("soma");
 const sub = document.getElementById("subtrai");
 const divis = document.getElementById("divide");
 const multi = document.getElementById("multiplica");
-
+const copy = document.querySelector("#copy");
+const apagar = document.querySelector("#delete");
 let operacoesBasica = false; //controle do uso das operacoes, para não repetir sinais
 let decimal = false;
 
@@ -42,6 +44,10 @@ operacoes.forEach((el) => {
         tela.innerHTML += "*";
       } else if (evt.target.innerHTML == "÷") {
         tela.textContent += "/";
+      } else if (evt.target.innerHTML == "CPY") {
+        tela.innerHTML += "";
+      } else if (evt.target.innerHTML == "DEL") {
+        tela.innerHTML += "";
       } else {
         tela.textContent += evt.target.textContent;
       }
@@ -64,3 +70,26 @@ resultado.addEventListener("click", (evt) => {
 });
 
 /*eval é um funcao que avalia uma string como código js em tempo de execução.  Basicamente, pode passar uma string contendo uma expressão ou um conjunto de instruções js para a função eval, e o js irá executar esse código como se ele tivesse sido definido diretamente no programa */
+
+// clip board - aula 73
+
+//  clip board: copia itens para a área de transferência do sistema.
+copy.addEventListener("click", (evt) => {
+  navigator.clipboard.writeText(tela.innerHTML);
+});
+//colar da área de transferência: readText
+// copiar para a área de transferência: writeText
+
+apagar.addEventListener("click", (evt) => {
+  operacoesBasica = false;
+  decimal = false;
+  //obtem o conteudo da tela
+  let contentTela = tela.textContent;
+  //remove o ultimo caractere da tela
+  contentTela = contentTela.slice(0, -1);
+  //define o ultimo conteudo da tela, sem o ultimo caractere
+  tela.textContent = contentTela;
+  if (tela.innerHTML == "") {
+    tela.innerHTML = "0";
+  }
+});

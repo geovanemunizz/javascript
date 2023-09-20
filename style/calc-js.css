@@ -33,7 +33,7 @@ body {
 }
 
 .container {
-  max-width: 20em;
+  max-width: 30em;
 }
 .container > p {
   text-align: center;
@@ -44,7 +44,7 @@ body {
   margin-left: auto;
   border-radius: 12px;
   margin-top: 2em;
-  max-width: 15em;
+  max-width: 21em;
   overflow: hidden;
   box-shadow: 0 0 40px 0px rgba(0, 0, 0, 0.15);
 }
@@ -59,7 +59,7 @@ body {
 
 .elementos_calculadora {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   grid-gap: 1px;
   background-color: #999;
 }
@@ -77,6 +77,6 @@ body {
 }
 .igual {
   grid-column: -2;
-  grid-row: 2 / span 4;
+  grid-row: 3 / span 4;
   background-image: linear-gradient(to top, #74ebd5, #37786c);
 }
