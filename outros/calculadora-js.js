@@ -74,13 +74,13 @@ resultado.addEventListener("click", (evt) => {
 // clip board - aula 73
 
 //  clip board: copia itens para a área de transferência do sistema.
-copy.addEventListener("click", (evt) => {
+copy.addEventListener("click", () => {
   navigator.clipboard.writeText(tela.innerHTML);
 });
 //colar da área de transferência: readText
 // copiar para a área de transferência: writeText
 
-apagar.addEventListener("click", (evt) => {
+apagar.addEventListener("click", () => {
   operacoesBasica = false;
   decimal = false;
   //obtem o conteudo da tela

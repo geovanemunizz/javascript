@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>callback</title>
+</head>
+
+<body>
+    <div id="display"></div>
+    <div id="game"></div>
+    <script>
+        /// callback é uma função passada como argumento para outra função
+        /* importante: ao passar uma função como argumento, não usar parêntese.
+        
+        certo: calculadora(12,45, tela);
+        errado: calculadora(12,45,tela());
+        */
+
+        function tela(soma) {
+            document.querySelector("#display").innerHTML = soma
+        }
+
+        function calculadora(num1, num2, Functioncallback) {
+            let calc = num1 + num2
+            Functioncallback(calc)
+        }
+        calculadora(12, 45, tela)
+
+        const Numbers = [1, 5, -12, -65, 8, 15, -4]
+        const proNumbers = removeCall(Numbers, (el) => el >= 0)
+        // resultado na tela, apenas os números maiores ou iguais a 0
+        document.querySelector("#game").innerHTML = proNumbers
+        function removeCall(numbe, callback) {
+            const arrayFunc = []
+            for (x of numbe) {
+                if (callback(x)) {
+                    arrayFunc.push(x)
+                }
+            }
+            return arrayFunc
+        }
+
+        //  o callback é melhor utilizado para  função assincrona, onde uma função tem que esperar outra função
+    </script>
+</body>
+
+</html>
