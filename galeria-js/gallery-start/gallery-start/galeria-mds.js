@@ -2,8 +2,6 @@ const display = document.querySelector(".display-img");
 const botao = document.querySelector("button");
 const thumb = document.querySelector(".thumb-bar");
 const overlay = document.querySelector(".overlay");
-const images = document.querySelectorAll("img");
-const corpo = document.querySelector("body");
 
 const arryImg = [
   "images/pic1.jpg",
