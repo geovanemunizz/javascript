@@ -1,3 +1,5 @@
+//promise aula 75
+
 let minhaPromessa = new Promise(function (mySolucao, myerror) {
   mySolucao(); //quando for correto
   myerror(); // quando der erro
