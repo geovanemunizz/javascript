@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math aula 81</title>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        border: none;
+      }
+      .eyes{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 400px;
+        height: 200px;
+        flex-direction: row;
+      }
+      .olho{
+        width: 200px;
+        height: 200px;
+        transform-origin: center center; 
+        /* define a origiem de rotação para, a partir do centro  */
+      }
+    </style>
+</head>
+
+<body>
+    <!-- atividade para o olho acompanhar o mouse -->
+    <div class="eyes">
+        <img src="/img/olho.png" alt="foto de um olho em preto em branco"  id="olho-esquerdo" class="olho">
+        <img src="/img/olho.png" alt="foto de um olho em preto em branco" id="olho-direito" class="olho">
+    </div>
+    <script src="math-2.js"></script>
+</body>
+
+</html>
