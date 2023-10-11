@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historico e direcionamento</title>
+</head>
+<body>
+    <form onsubmit="event.preventDefault()">
+        <input type="url" name="url" id="url" required placeholder="bubbleTea.com.br">
+        <button id="botao">Enviar</button>
+    </form>
+    <!-- mostrarPropiedade() e  sendFile() estão presentes no primeiro link js nesse html-->
+    <button onclick="mostrarPropiedade()">Exibir</button>
+    <button onclick="sendFile('hello world')">envio de dados</button>
+    <!-- <script src="historico-direcionamento.js"></script> -->
+    <!-- <script src="navegacao.js"></script> -->
+    <script src="window.history.js"></script>
+</body>
+</html>
