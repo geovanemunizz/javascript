@@ -1,4 +1,4 @@
-//funções assincronas funcionam como Primises, mas com sintaxe mais simples
+//funções assincronas funcionam como Promises, mas com sintaxe mais simples
 
 //  Precisamos declarar a função com a palavra async
 
@@ -6,7 +6,7 @@
 
 //  pode-se aplicar o recurso de funções anônimas e métodos de class
 
-// tentar usar o await sem o aync gera um erro
+// tentar usar o await sem o async gera um erro
 
 // Exemplo de uso: inserção de dado no banco
 
