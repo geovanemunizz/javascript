@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="widtd=device-widtd, initial-scale=1.0">
+    <title>Criando e imprimindo conteudo em html aula 89</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            border: none;
+            box-sizing: content-box;
+        }
+        table {
+            width: 300px;
+            font: 17px helvetica,arial; 
+            /* font-family: fantasy; */
+        }
+        table,th,td{
+            border: 2px solid #ddd;
+            border-collapse: collapse;
+            padding: 2px 3px;
+            text-align: center;
+        }
+        button{
+            background-color: #eee;
+            padding:  10px 50px;
+            margin-top: 5px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        button:hover{
+            outline: 3px solid #5462;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <div id="tabela">
+        <table>
+            <tr>
+                <th>Equipamento</th>
+                <th>Quantidade</th>
+                <th>Valor</th>
+            </tr>
+            <tr>
+                <td>Headset</td>
+                <td>2</td>
+                <td>R$279,90</td>
+            </tr>
+            <tr>
+                <td>Mousepad</td>
+                <td>4</td>
+                <td>R$117,99</td>
+            </tr>
+            <tr>
+                <td>Placa de video</td>
+                <td>3</td>
+                <td>R$1249,99</td>
+            </tr>
+        </table>
+    </div>
+    <button>Imprimir</button>
+    <script src="pdf_e_impressao.js"></script>
+</body>
+
+</html>
