@@ -1,0 +1,48 @@
+//exportando recursos do módulo:
+
+// a primeira coisa que se deve fazer para obter acesso aos recursos do módulo é exportá-los. isso é feito usando o export
+
+//pode exportar funções, var, let,const, classes. Mas elas precisam  ser de nível superior,  não pode usar a exportação dentro de uma função, por exemplo.
+
+// a maneira mais conveniente de exportar todos os itens que você deseja exportar é usar uma única exportação no final do arquivo do módulo, seguida por uma lista separada por virgula dos recursos que deseja exportar envoltos em chaves.
+
+exmeplo: export {linguagem,loteria}
+
+// importando recursos para o script
+
+depois de exportar os recursos do módulo, é necessário importá-lo para o script poder usar. 
+
+exemplo: import {linguagem} from "./linguagens.js";
+
+se usa o import {}; seguida por uma lista separada por vírgula dos recursos que você deseja importar agrupados em chaves, seguidos pela palavra-chave 'from' e o caminho do arquivo do módulo.
+
+//Aplicando Módulo em html:
+
+// para utilizar módulos no html, precisa incluir type= "module" no script.
+
+exemplo: <script type="module" src="aquivo.js"></script>
+
+também é possivel incoporar o script módulo diretamente no arquivo html:
+
+<script type="module">/* JavaScript module código escrito aqui */</script>
+//
+
+// o script para o qual se importa os recursos do módulo atua basicamente como um módulo de nível superior. se o omitir, o navegador pode exibir um erro "SyntaxError: as declarações de importação podem aparecer apenas no nível superior de um módulo".
+// Só se pode usar import e export dentro de módulos, não scripts regulares.
+
+
+As funcionalidades acima foi composta por named exports, cada item (seja função,const,etc.) foi referido por seu nome na exportação e esse também foi usado na importação.
+
+Há outro tipo de exportação chamado default export, isso facilita a função padrão fornecida por um módulo e também ajuda os módulos js a interoperar com os sistemas de módulos ommonJs e AMD existentes
+
+exemplo de exportação padrão:
+export default loteria;
+
+importando o array padrão:
+import loteria from "./linguagens.js";
+
+// sem os colchetes, isso ocorre porque há apenas uma exportação padrão permitida por módulo;
+
+outra forma de importar: 
+import {default as loteria} from "./linguagens.js"; 
+
