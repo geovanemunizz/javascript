@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="/projeto/css/api-clima.css">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- script -->
+    <script src="/projeto/js/api-clima.js" defer></script>
+    <title>Api de clima</title>
+    <!-- api country -->
+    <!-- <img src="https://flagsapi.com/:country_code/:style/:size.png"> -->
+</head>
+
+<body>
+    <div class="container">
+        <div class="form">
+            <h3>Confira o clima da sua cidade</h3>
+            <div class="form-input-container">
+                <input type="text" placeholder="Digite o nome da cidade " id="city-input">
+                <button id="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+        </div>
+        <div id="weather-data" class="hide">
+            <h2>
+                <i class="fa solid fa-location-dot"></i>
+                <span id="city"></span>
+                <img src="" alt="flag of country" id="country">
+            </h2>
+            <p id="temperature">
+                <span></span>
+                &deg;C
+            </p>
+            <div id="description-container">
+                <p id="description"></p>
+                <img src="" alt="condições climáticas" id="weather-icon">
+            </div>
+            <div id="details-container">
+                <p id="humidity">
+                    <i class="fa-solid fa-droplet"></i>
+                    <span></span>
+                </p>
+                <p id="wind">
+                    <i class="fa-solid fa-wind"></i>
+                    <span></span>
+                </p>
+            </div>
+        </div>
+
+        <div id="error-message" class="hide">
+            <p>Não foi possivel encontrar essa cidade</p>
+        </div>
+        <div id="loading" class="hide">
+            <i class="fa-solid fa-spinner"></i>
+        </div>
+
+        <div id="sugestao">
+            <button id="tokyo">Tokyo</button>
+            <button id="shibuya">Shibuya</button>
+            <button id="kyoto">kyoto</button>
+            <button id="busan">busan</button>
+            <button id="para">para</button>
+            <button id="manchester">manchester</button>
+            <button id="londres">londres</button>
+            <button id="frankfurt">frankfurt</button>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/projeto/css/main.css">
+    <title>projeto final</title>
+</head>
+
+<body>
+    <div id="tasks">
+        <div id="task-header">
+            <h2>Salve sua tarefa</h2>
+            <form id="add-form">
+                <input type="text" id="task-text" placeholder=" o que você vai fazer?">
+                <button type="submit" id="botao">
+                    <ion-icon name="add-outline"></ion-icon>
+                </button>
+            </form>
+        </div>
+        <div id="task-main">
+            <h2>Estas são as suas tarefas:</h2>
+            <ul id="task-list">
+                <li class="task-box template hide">
+                    <span class="task-title"></span>
+                    <ion-icon class="done-btn" name="checkmark-outline"></ion-icon>
+                    <ion-icon class="remove-btn" name="close-outline"></ion-icon>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="/projeto/js/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</body>
+
+</html>
