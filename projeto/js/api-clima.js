@@ -1,8 +1,6 @@
 //
 
 const apiKey = "e7558e1305f74383f23f92553c6af138";
-// const apiCountryUrl = "https://flagsapi.com/";
-const apiCountryUrl = "https://countryflagsapi.com/png/";
 const apiSplashArt = "https://source.unsplash.com/1600x900/?";
 
 const inputCidade = document.querySelector("#city-input");
@@ -33,6 +31,7 @@ function toggleLoading() {
 // Funções
 
 // busca o nome da cidade na api: https://openweathermap.org/api
+
 async function getWeatherData(city) {
   toggleLoading();
 
@@ -87,8 +86,7 @@ async function showWeather(city) {
     `https://flagsapi.com/${data.sys.country}/flat/64.png`
   );
 
-  // countryElement.setAttribute("src", apiCountryUrl + data.sys.country)
-
+  // altera o background com uma api que busca pela cidade pesquisada
   document.body.style.backgroundImage = `url("${apiSplashArt + city}")`
 
   //remoção da class "hide" na div
@@ -113,7 +111,6 @@ inputCidade.addEventListener("keyup", (evt) => {
     showWeather(city);
   }
 });
-
 
 sugestaoButton.forEach((btn)=>{
   btn.addEventListener("click",()=>{
