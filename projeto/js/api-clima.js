@@ -63,7 +63,8 @@ async function showWeather(city) {
 
   const data = await getWeatherData(city);
 
-  if (data.cod === "404") {
+
+  if (data.cod === "404" || data.cod === "400") {
     showError();
     return;
   }
