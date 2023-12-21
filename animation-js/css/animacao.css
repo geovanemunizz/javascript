@@ -1,35 +1,35 @@
-
-:root{
-    --repeat-color: #E1E8FC;
+:root {
+  --repeat-color: #e1e8fc;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-   
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 .banner {
-    display: flex;
-    position: relative;
-    width: 100%;
-    align-items: center;
-    /* justify-content: flex-start; */
-    background-color: var(--repeat-color);
+  display: flex;
+  position: relative;
+  width: 100%;
+  align-items: center;
+  /* justify-content: flex-start; */
+  background-color: var(--repeat-color);
 }
 
 button {
-    width: 150px;
-    height: 30px;
-    margin:10px;
-    border-radius: 5px;
-    cursor: pointer;
-    background-color: #3c5295;
-    color: var(--repeat-color);
-    /* border: none; */
+  width: 150px;
+  height: 30px;
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #3c5295;
+  color: var(--repeat-color);
+  /* border: none; */
 }
+
+
+
 .car {
-    width: 100px;
-    height: 40px;
-    background-color: #84A0F3;
+  background-color: #84a0f3;
 }

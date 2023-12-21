@@ -21,10 +21,17 @@ const texto = "A quick fox";
 const regexp = /\w+(?= fox)/;
 console.log(texto.match(regexp));
 
+let nome = String("Jon snow");
+console.log(nome.search(/SNOW/i)); // output 4
+console.log(nome.match(/N/gi)); // output [n,n]
+console.log(nome.replace(/n/gi, "m")); // output Jom smow
 
-let nome = String("Jon snow")
-console.log(nome.search(/SNOW/i)) // output 4
-console.log(nome.match(/N/ig)) // output [n,n]
-console.log(nome.replace(/n/ig,"m")) // output Jom smow
+console.log(nome.split(/o/gi));
 
-console.log(nome.split(/o/ig))
+//função que conta o número de vogais de uma palavra
+function countVogais(el) {
+  let vogais = el.match(/[aeiou]/gi); // g = global, i = sem distinção de maiúscula e minúscula
+  return vogais ? vogais.length : 0;
+}
+
+console.log(countVogais("pedreste"));
