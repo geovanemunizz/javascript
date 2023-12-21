@@ -59,9 +59,7 @@ startButton.addEventListener("click", () => {
   directionCar();
 });
 
-stopButton.addEventListener("click", () => {
-  stopAnimation();
-});
+stopButton.addEventListener("click", stopAnimation);
 
 reloadButton.addEventListener("click", () => {
   stopAnimation();
