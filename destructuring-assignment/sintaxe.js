@@ -1,4 +1,4 @@
-// 28-12-2023 desestruturação em js
+// 28-12-2023 desestruturação em js aula 114 - 115
 
 // É uma expresão que possibilita extrair dados de arrays ou objetos em varivaies distintas;
 

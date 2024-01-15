@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/projeto/img/favicon-star.png" type="image/x-icon">
+    <title>Validação nativa</title>
+
+    <style>
+        .erro{
+            color: #ff0000;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="formulario">
+
+        <label for="input_name">Nome</label>
+        <input type="text" id="input_name" minlength="4" maxlength="14" required>
+        <span id="name_error"></span>
+        <br>
+
+        <label for="number_phone">Número de telefone</label>
+        <input type="number" id="number_phone" min="2" max="9" required>
+        <span id="number_error"></span>
+        <br>
+
+        <input type="submit" value="Validate" id="validate_button">
+
+    </form>
+
+    <script src="/projeto/js/native-validation.js"></script>
+</body>
+
+</html>
