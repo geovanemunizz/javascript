@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* General setup */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            margin: 0;
+        }
+
+        html {
+            font-size: 10px;
+            font-family: sans-serif;
+        }
+
+        /* Typography */
+
+        h1 {
+            font-size: 6rem;
+        }
+
+        p,
+        form,
+        li {
+            font-size: 1.6rem;
+            line-height: 1.5;
+            font-family: sans-serif;
+        }
+
+
+        html {
+            background-color: blue;
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: inherit;
+        }
+
+        body>.wrapper {
+            width: 90%;
+            max-width: 800px;
+            background-color: rgb(250, 250, 250);
+            padding: 2rem;
+            position: relative;
+            border: 5px solid black;
+        }
+
+        body>div>div {
+            width: 300px;
+        }
+
+        h1 {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            position: absolute;
+            left: 2rem;
+            top: -4.6rem;
+            text-transform: uppercase;
+            color: rgb(250, 250, 250);
+            text-shadow: 0px -1px 1px black,
+                0px -2px 1px black,
+                0px -3px 1px black,
+                0px -4px 1px black,
+                0px -5px 1px black;
+        }
+
+        form div label {
+            float: left;
+            width: 45%;
+            text-align: right;
+        }
+
+        form div input,
+        form div select {
+            float: right;
+        }
+
+        form div input {
+            width: 49%;
+            line-height: 1.5;
+        }
+
+        form div select {
+            width: 50%;
+        }
+
+        form div option {
+            height: 2rem;
+        }
+
+        form div {
+            margin: 0 auto;
+            width: 70%;
+            padding-bottom: 4rem;
+        }
+
+        footer {
+            clear: both;
+        }
+
+        img {
+            position: absolute;
+            bottom: 1rem;
+            left: 1rem;
+            height: 145px;
+        }
+
+        @media (max-width: 800px) {
+            body>div {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 3rem;
+                top: -2.2rem;
+            }
+
+            form div label {
+                float: none;
+                width: 100%;
+                text-align: left;
+            }
+
+            form div input,
+            form div select {
+                float: none;
+                width: 100%;
+            }
+
+            form div {
+                padding-bottom: 1.5rem;
+            }
+
+            img {
+                bottom: -4rem;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>Web storage</h1>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quo nesciunt excepturi molestiae ipsum hic praesentium, impedit suscipit dolores maxime numquam rerum in earum! Harum officiis, sunt illum hic placeat doloribus officia explicabo doloremque nostrum similique nulla libero a, necessitatibus aliquid voluptatibus accusamus sint pariatur dolorem accusantium amet, asperiores totam?</p>
+
+        <form>
+            <div>
+                <label for="bgcolor">color:</label>
+                <input class="color" id="bgcolor" value="blue">
+            </div>
+            <div>
+                <label for="font">style:</label>
+                <select id="font">
+                    <option value="sans-serif" selected>Sans-serif</option>
+                    <option value="serif">Serif</option>
+                    <option value="monospace">Monospace</option>
+                </select>
+            </div>
+            <div>
+                <label for="image">image:</label>
+                <select id="image">
+                    <option
+                        value="https://th.bing.com/th/id/OIP.WNKe74AY6mDv4umUBSPxngAAAA?w=400&h=568&rs=1&pid=ImgDetMain"
+                        selected>Kana Arima</option>
+                    <option value="https://th.bing.com/th/id/OIP.6_heCXTdJ_M7WxGANk4pDAHaKh?rs=1&pid=ImgDetMain">
+                        Ai</option>
+                    <option
+                        value="https://www.planetebd.com/dynamicImages/album/cover/large/47/35/album-cover-large-47353.jpg">
+                        Ruby</option>
+                </select>
+            </div>
+        </form>
+
+        <footer></footer>
+        <img src="https://th.bing.com/th/id/OIP.InGLTcjUtFOPhvF6HvARNgHaEK?rs=1&pid=ImgDetMain">
+
+        <script src="web-storage.js"></script>
+
+</body>
+
+</html>

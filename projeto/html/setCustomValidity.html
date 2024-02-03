@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .error {
+            color: #ff0000;
+        }
+
+        input {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <label for="input-name">Nome</label>
+        <input type="email" name="input-name" id="input-name" required minlength="4" maxlength="14">
+        <span id="name-error"></span>
+        <br>
+
+        <label for="input-number">Número</label>
+        <input type="number" name="input-number" id="input-number" required min="2" max="9">
+        <span id="number-error"></span>
+        <br>
+        <label for="input_id">Id Número</label>
+        <input type="number" required id="input_id" min="8" max="90"><br>
+        <input type="submit" value="Enviar" id="send-button">
+    </form>
+    <script src="/projeto/js/setCustomValidity.js"></script>
+</body>
+
+</html>
